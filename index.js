@@ -6,7 +6,7 @@ function init() {
   // pick any two players from the players list
   const [firstPlayer, secondPlayer] = pickAnyTwoPlayers(playersList);
   console.log("FirstPlayer is ", firstPlayer);
-  console.log("SecondPlayer is ", firstPlayer);
+  console.log("SecondPlayer is ", secondPlayer);
   // start the game with two players
   startGame(firstPlayer, secondPlayer);
 }
