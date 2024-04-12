@@ -1,16 +1,9 @@
 class Player {
-  constructor(health, strength, attack, id) {
+  constructor(health, strength, attack, name) {
     this.health = health;
     this.strength = strength;
     this.attack = attack;
-    this.id = id;
+    this.name = name;
   }
 }
-class Players extends Player {
-  constructor(team) {
-    super();
-    this.team = team;
-  }
-}
-
-module.exports = { Player, Players };
+module.exports = Player;

@@ -1,22 +1,13 @@
-const { Player, Players } = require("./MagicalArena/player");
+const playersList = require("./MagicalArena/playersData");
+const pickAnyTwoPlayers = require("./MagicalArena/randomplayers");
+const startGame = require("./MagicalArena/startGame");
 
 function init() {
-  // call the main game function
-  const player1 = new Player(100, 10, 5, 1);
-  const player2 = new Player(100, 10, 5, 2);
-
-  //Create an array to hold the players
-  const playersList = [];
-
-  // Add players to the list
-  playersList.push(player1);
-  playersList.push(player2);
-
-  // Create team instances
-  const RCB = new Players(playersList);
-
-  // Log the team
-  console.log(RCB);
+  // pick any two players from the players list
+  const [firstPlayer, secondPlayer] = pickAnyTwoPlayers(playersList);
+  console.log();
+  //console.log(`player 2 = ${player2}`);
+  // start the game with two players
+  startGame(firstPlayer, secondPlayer);
 }
-
 init();
