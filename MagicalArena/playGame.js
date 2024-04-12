@@ -15,11 +15,6 @@ function playGame(attacker, defender) {
   );
   console.log(`Damage is ${damage}`);
   [attacker, defender] = [defender, attacker];
-  if (attacker.health == 0) {
-    console.log(`${attacker.name} wins`);
-  } else {
-    console.log(`${defender.name} wins`);
-  }
 }
 
 module.exports = playGame;

@@ -16,11 +16,11 @@ function startGame(player1, player2) {
       playGame(startplayer, opponentplayer);
     }
   }
-  // if (player1.health == 0) {
-  //   console.log("player 2 wins");
-  // } else {
-  //   console.log("player 1 wins");
-  // }
+  if (player1.health == 0) {
+    console.log(`${player2.name} wins`);
+  } else {
+    console.log(`${player1.name} wins`);
+  }
 }
 
 module.exports = startGame;
