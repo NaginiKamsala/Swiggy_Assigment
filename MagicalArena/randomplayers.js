@@ -1,11 +1,11 @@
-function pickAnyTwoPlayers(arrobj) {
-  let randomfirstplayer = Math.floor(Math.random() * arrobj.length);
+function pickAnyTwoPlayers(playersList) {
+  let randomfirstplayer = Math.floor(Math.random() * playersList.length);
   let randomsecondplayer;
   do {
-    randomsecondplayer = Math.floor(Math.random() * arrobj.length);
+    randomsecondplayer = Math.floor(Math.random() * playersList.length);
   } while (randomsecondplayer === randomfirstplayer);
 
-  return [arrobj[randomfirstplayer], arrobj[randomsecondplayer]];
+  return [playersList[randomfirstplayer], playersList[randomsecondplayer]];
 }
 
 //console.log(getRanTwoPlayers(players));
